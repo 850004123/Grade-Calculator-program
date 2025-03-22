@@ -6,7 +6,25 @@ namespace Grade_Calculator_program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+          // Set an inter array and ask the user to input marks for four subjects
+
+            int[] marks = new int[3];
+
+            Console.WriteLine("Enter marks for Maths: ");
+            marks[0] = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter marks for Physics: ");
+            marks[1] = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter marks for Chemistry: ");
+            marks[2] = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter marks for Computer Science: ");
+            marks[3] = Convert.ToInt32(Console.ReadLine());
+
+
+
+
         }
     }
 }
