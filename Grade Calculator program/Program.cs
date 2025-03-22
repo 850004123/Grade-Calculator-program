@@ -5,6 +5,8 @@ namespace Grade_Calculator_program
 {
     class Program
     {
+        private static int grade;
+
         static void Main(string[] args)
         {
             // Set an inter array and ask the user to input marks for four subjects
@@ -69,32 +71,57 @@ namespace Grade_Calculator_program
         // Method for calculating grade
         static void CalculateGrade(double average)
         {
+            string grade;
             if (average >= 90)
             {
+                grade = "A+";
                 Console.WriteLine("Grade: A+");
             }
             else if (average >= 80)
             {
+                grade = "A";
                 Console.WriteLine("Grade: A");
             }
             else if (average >= 70)
             {
+                grade = "B";
                 Console.WriteLine("Grade: B");
             }
             else if (average >= 60)
             {
+                grade = "C";
                 Console.WriteLine("Grade: C");
             }
             else if (average >= 50)
             {
+                grade = "D";
                 Console.WriteLine("Grade: D");
             }
             else
             {
+                grade = "F";
                 Console.WriteLine("Grade: F");
             }
 
-
+            switch (grade)
+            {
+                case "A":
+                    Console.WriteLine("Excellent! Your Grade is A");
+                    break;
+                case "B":
+                    Console.WriteLine("Good Your Grade is B");
+                    break;
+                case "C":
+                    Console.WriteLine("Satisfactory. Your Grade is C");
+                    break;
+                case "D":
+                    Console.WriteLine("Pass Your Grade is D");
+                    break;
+                case "F":
+                    Console.WriteLine("Fail Your Grade is F");
+                    break;
+            }
+            Console.ReadLine();
         }
     }
 }
