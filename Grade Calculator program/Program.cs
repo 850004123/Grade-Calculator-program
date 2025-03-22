@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Grade_Calculator_program
 {
@@ -44,7 +45,14 @@ namespace Grade_Calculator_program
                 return;
             }
 
+            // Calculate the average of the marks
 
+            double average = CalculateAverage(marks);
+
+            // Method for calculating average
+            
+
+            
         }
     }
 }
