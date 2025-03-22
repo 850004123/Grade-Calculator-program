@@ -50,6 +50,9 @@ namespace Grade_Calculator_program
 
             double average = CalculateAverage(marks);
             Console.WriteLine($"The average marks are: {average}");
+
+            // Calculate the grade
+            CalculateGrade(average);
         }
 
         // Method for calculating average
@@ -62,5 +65,37 @@ namespace Grade_Calculator_program
             }
             return sum / marks.Length;
         }
+
+        // Method for calculating grade
+        static void CalculateGrade(double average)
+        {
+            if (average >= 90)
+            {
+                Console.WriteLine("Grade: A+");
+            }
+            else if (average >= 80)
+            {
+                Console.WriteLine("Grade: A");
+            }
+            else if (average >= 70)
+            {
+                Console.WriteLine("Grade: B");
+            }
+            else if (average >= 60)
+            {
+                Console.WriteLine("Grade: C");
+            }
+            else if (average >= 50)
+            {
+                Console.WriteLine("Grade: D");
+            }
+            else
+            {
+                Console.WriteLine("Grade: F");
+            }
+
+
+        }
     }
 }
+            
