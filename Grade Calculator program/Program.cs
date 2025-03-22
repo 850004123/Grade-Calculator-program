@@ -6,7 +6,7 @@ namespace Grade_Calculator_program
     {
         static void Main(string[] args)
         {
-          // Set an inter array and ask the user to input marks for four subjects
+            // Set an inter array and ask the user to input marks for four subjects
 
             int[] marks = new int[3];
 
@@ -21,7 +21,6 @@ namespace Grade_Calculator_program
 
             Console.WriteLine("Enter marks for Computer Science: ");
             marks[3] = Convert.ToInt32(Console.ReadLine());
-
 
 
 
