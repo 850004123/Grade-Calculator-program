@@ -48,9 +48,13 @@ namespace Grade_Calculator_program
             // Calculate the average of the marks
 
             double average = CalculateAverage(marks);
+            Console.WriteLine($"The average marks are: ");
 
             // Method for calculating average
-            
+
+            double CalculateAverage(int[] marks);
+
+
 
             
         }
