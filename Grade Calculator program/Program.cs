@@ -12,9 +12,21 @@ namespace Grade_Calculator_program
 
             Console.WriteLine("Enter marks for Maths: ");
             marks[0] = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Enter marks for Physics: ");
+            
+            //set marks maximum
+            if (marks[0] >100)
+            {
+                Console.WriteLine("Marks cannot be greater than 100");
+                return;
+            }
+                Console.WriteLine("Enter marks for Physics: ");
             marks[1] = Convert.ToInt32(Console.ReadLine());
+
+            if (marks[1] > 100)
+            {
+                Console.WriteLine("Marks cannot be greater than 100");
+                return;
+            }
 
             Console.WriteLine("Enter marks for Chemistry: ");
             marks[2] = Convert.ToInt32(Console.ReadLine());
@@ -22,8 +34,7 @@ namespace Grade_Calculator_program
             Console.WriteLine("Enter marks for Computer Science: ");
             marks[3] = Convert.ToInt32(Console.ReadLine());
 
-
-
+            
         }
     }
 }
