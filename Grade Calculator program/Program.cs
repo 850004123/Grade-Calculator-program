@@ -30,11 +30,21 @@ namespace Grade_Calculator_program
 
             Console.WriteLine("Enter marks for Chemistry: ");
             marks[2] = Convert.ToInt32(Console.ReadLine());
+            if (marks[2] > 100)
+            {
+                Console.WriteLine("Marks cannot be greater than 100");
+                return;
+            }
 
             Console.WriteLine("Enter marks for Computer Science: ");
             marks[3] = Convert.ToInt32(Console.ReadLine());
+            if (marks[3] > 100)
+            {
+                Console.WriteLine("Marks cannot be greater than 100");
+                return;
+            }
 
-            
+
         }
     }
 }
