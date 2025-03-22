@@ -9,18 +9,19 @@ namespace Grade_Calculator_program
         {
             // Set an inter array and ask the user to input marks for four subjects
 
-            int[] marks = new int[3];
+            int[] marks = new int[4];
 
             Console.WriteLine("Enter marks for Maths: ");
             marks[0] = Convert.ToInt32(Console.ReadLine());
-            
+
             //set marks maximum
-            if (marks[0] >100)
+            if (marks[0] > 100)
             {
                 Console.WriteLine("Marks cannot be greater than 100");
                 return;
             }
-                Console.WriteLine("Enter marks for Physics: ");
+
+            Console.WriteLine("Enter marks for Physics: ");
             marks[1] = Convert.ToInt32(Console.ReadLine());
 
             if (marks[1] > 100)
@@ -48,15 +49,18 @@ namespace Grade_Calculator_program
             // Calculate the average of the marks
 
             double average = CalculateAverage(marks);
-            Console.WriteLine($"The average marks are: ");
+            Console.WriteLine($"The average marks are: {average}");
+        }
 
-            // Method for calculating average
-
-            double CalculateAverage(int[] marks);
-
-
-
-            
+        // Method for calculating average
+        static double CalculateAverage(int[] marks)
+        {
+            double sum = 0;
+            foreach (int mark in marks)
+            {
+                sum += mark;
+            }
+            return sum / marks.Length;
         }
     }
 }
